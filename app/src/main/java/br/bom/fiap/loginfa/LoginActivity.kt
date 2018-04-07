@@ -23,21 +23,20 @@ class LoginActivity : AppCompatActivity() {
 
         FacebookSdk.sdkInitialize(getApplicationContext());
 
-
         callbackManager = CallbackManager.Factory.create()
 
         LoginManager.getInstance().registerCallback(callbackManager,
                 object : FacebookCallback<LoginResult> {
                     override fun onSuccess(loginResult: LoginResult) {
-
+                        //codigo aqui
                     }
 
                     override fun onCancel() {
-
+                        //codigo aqui
                     }
 
                     override fun onError(exception: FacebookException) {
-
+                        //codigo aqui
                     }
                 })
     }
